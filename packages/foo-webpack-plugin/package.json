@@ -1,0 +1,18 @@
+{
+  "name": "foo-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --project ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/webpack": "^3",
+    "@types/tapable": "^0",
+    "typescript": "^2.9.2",
+    "webpack": "^3"
+  }
+}

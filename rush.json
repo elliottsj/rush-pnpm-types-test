@@ -1,0 +1,15 @@
+{
+  "rushVersion": "5.0.0",
+  "pnpmVersion": "2.9.0",
+  "nodeSupportedVersionRange": ">=8.9.0 <9.0.0",
+  "projects": [
+    {
+      "packageName": "bar-webpack-plugin",
+      "projectFolder": "packages/bar-webpack-plugin"
+    },
+    {
+      "packageName": "foo-webpack-plugin",
+      "projectFolder": "packages/foo-webpack-plugin"
+    }
+  ]
+}
