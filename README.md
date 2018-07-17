@@ -33,3 +33,5 @@ And observe the TypeScript error output:
 ```
 
 Because foo-webpack-plugin depends on `@types/webpack@^3` and `@types/tapable@^0`, rush + pnpm will also install `@types/tapable@^0` for bar-webpack-plugin. bar-webpack-plugin uses `@types/webpack@4`, which does not work with `@types/tapable@^0`, so the above error is raised.
+
+The above error still occurs even if `"@types/tapable": "^1"` is added to bar-webpack-plugin's package.json.
