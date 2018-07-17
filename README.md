@@ -1,6 +1,8 @@
 # rush-pnpm-types-test
 Reproduction of a bug involving rush + pnpm + @types/webpack + @types/tapable.
 
+See also: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/27350
+
 To repro the bug:
 
 ```
@@ -29,3 +31,5 @@ And observe the TypeScript error output:
 
 ...
 ```
+
+Because foo-webpack-plugin depends on `@types/webpack@^3` and `@types/tapable@^0`, rush + pnpm will also install `@types/tapable@^0` for bar-webpack-plugin. bar-webpack-plugin uses `@types/webpack@4`, which does not work with `@types/tapable@^0`, so the above error is raised.
