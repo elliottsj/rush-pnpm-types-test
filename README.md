@@ -6,8 +6,7 @@ See also: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/27350
 To repro the bug:
 
 ```
-npm install
-./node_modules/.bin/rush install
+node ./common/scripts/install-run-rush.js install
 cd packages/bar-webpack-plugin/
 npm test
 ```
