@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/tapable": "^1",
     "@types/webpack": "^4",
     "typescript": "^2.9.2",
     "webpack": "^4"

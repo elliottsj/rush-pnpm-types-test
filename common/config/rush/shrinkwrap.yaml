@@ -1,7 +1,6 @@
 dependencies:
   '@rush-temp/bar-webpack-plugin': 'file:projects/bar-webpack-plugin.tgz'
   '@rush-temp/foo-webpack-plugin': 'file:projects/foo-webpack-plugin.tgz'
-  '@types/tapable': 0.2.5
   typescript: 2.9.2
 packages:
   /@types/node/10.5.2:
@@ -12,6 +11,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dEoVvo/I9QFomyhY+4Q6Qk+I+dhG59TYceZgC6Q0mCifVPErx6Y83PNTKGDS5e9h9Eti6q0S2mm16BU6iQK+3w==
+  /@types/tapable/1.0.4:
+    dev: false
+    resolution:
+      integrity: sha512-78AdXtlhpCHT0K3EytMpn4JNxaf5tbqbLcbIRoQIHzpTIyjpxLQKRoxU55ujBXAtg3Nl2h/XWvfDa9dsMOd0pQ==
   /@types/uglify-js/3.0.3:
     dependencies:
       source-map: 0.6.1
@@ -2891,13 +2894,14 @@ packages:
       integrity: sha1-YpmpBVsc78lp/355wdkY3Osiw2A=
   'file:projects/bar-webpack-plugin.tgz':
     dependencies:
+      '@types/tapable': 1.0.4
       '@types/webpack': 4.4.7
       typescript: 2.9.2
       webpack: /webpack/4.16.1/webpack@4.16.1
     dev: false
     name: '@rush-temp/bar-webpack-plugin'
     resolution:
-      integrity: sha512-ebeLaA/FFEhP3ohCR2F4U8CRadT2sX+lCEQpAJcQa2lop4SpwVlg4LDcedQGnN5RUoazl0dGa3yM0HwvWOq4Xg==
+      integrity: sha512-t8I/thrQcyYOabLPMfEevg2ZQbUqIctcpqORx2D8cVIdSbhsuWi9dvziOGOBSXu1JK1wiB0O851pgPZMymb3qQ==
       tarball: 'file:projects/bar-webpack-plugin.tgz'
     version: 0.0.0
   'file:projects/foo-webpack-plugin.tgz':
@@ -2909,7 +2913,7 @@ packages:
     dev: false
     name: '@rush-temp/foo-webpack-plugin'
     resolution:
-      integrity: sha512-7yKBfDkPx/m+xbnTzVFGnDoZCkBu/yATo9iVku3BI/ZG4Fv7RDNJTjKP/Ilt3F9fHJVXpO94bFzJOQSZefRR6A==
+      integrity: sha512-RctBHnFup8Bu84g8zKucZUoZ5UV/0OGLrgB0NQNm7cbPhUuysRCaQ46MwYEYURsAp8U4iINdnUDPOaT6lOTSvw==
       tarball: 'file:projects/foo-webpack-plugin.tgz'
     version: 0.0.0
 registry: 'https://registry.npmjs.org/'
@@ -2918,5 +2922,4 @@ shrinkwrapVersion: 3
 specifiers:
   '@rush-temp/bar-webpack-plugin': 'file:./projects/bar-webpack-plugin.tgz'
   '@rush-temp/foo-webpack-plugin': 'file:./projects/foo-webpack-plugin.tgz'
-  '@types/tapable': ^0
   typescript: ^2.9.2
